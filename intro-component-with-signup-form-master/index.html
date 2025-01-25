@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="leftDiv">
+      <h1>Learn to code by <br> watching others</h1>
+      <p>See how experienced developers solve problems in real-time.<br>
+        Watching scripted tutorials is great, but understanding how <br>
+        developers think is invaluable.</p>
+    </div>
+    <div id="rightDiv">
+      <div class="upform"> Try it free 7 days <span> then $20/mo. thereafter</span></div>
+      <div id="formH5">
+        <form id="form" novalidate>
+          <div class="input-container">
+            <input type="text" name="fname" placeholder="First Name" >
+            <img class="error-img" src="images/icon-error.svg">
+            <span class="error" id="fnameError"></span>
+          </div>
+        
+          <div class="input-container">
+            <input type="text" name="lname" placeholder="Last Name">
+            <img class="error-img" src="images/icon-error.svg">
+            <span class="error" id="lnameError"></span>
+          </div>
+        
+          <div class="input-container">
+            <input type="email" name="emailAdd" placeholder="Email Address">
+            <img class="error-img" src="images/icon-error.svg">
+            <span class="error" id="emailError"></span>
+          </div>
+        
+          <div class="input-container">
+            <input type="password" name="password" placeholder="Password">
+            <img class="error-img" src="images/icon-error.svg">
+            <span class="error" id="passwordError"></span>
+          </div>
+        
+          <input type="submit" id="submit" value="CLAIM YOUR FREE TRIAL">
+        </form>
+        
+        <h5>By clicking the button. you are agreeng to our <span id="redWords">Terms and Services</span> </h5>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
